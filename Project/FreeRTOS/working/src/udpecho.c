@@ -57,7 +57,7 @@ static void udpecho_thread(void *arg)
     err = netconn_bind(conn, IP_ADDR_ANY, 7);
     if (err == ERR_OK) {
       while (1) {
-        netconn_recv(conn,&buf);
+        buf = netconn_recv(conn);
       
         if (buf!= NULL) {
           addr = netbuf_fromaddr(buf);
@@ -69,10 +69,10 @@ static void udpecho_thread(void *arg)
         }
       }
     } else {
-//      printf("can not bind netconn");
+      printf("can not bind netconn");
     }
   } else {
- //   printf("can create new UDP netconn");
+    printf("can create new UDP netconn");
   }
 }
 /*-----------------------------------------------------------------------------------*/

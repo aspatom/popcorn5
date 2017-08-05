@@ -61,11 +61,11 @@
 //#define USE_DHCP       /* enable DHCP, if disabled static address is used*/
     	 
 	 
-#if 0	 
+#if 1	 
 #define RECV_IP_ADDR0   192
 #define RECV_IP_ADDR1   168
 #define RECV_IP_ADDR2   25
-#define RECV_IP_ADDR3   36
+#define RECV_IP_ADDR3   34
 
 // Tx
 #define TRANS_PORT       25261
@@ -100,7 +100,7 @@
 
 #endif
 
-#if 1	 
+#if 0	 
 //#define RECV_IP_ADDR0   54
 //#define RECV_IP_ADDR1   92
 //#define RECV_IP_ADDR2   15

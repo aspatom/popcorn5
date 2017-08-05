@@ -57,7 +57,6 @@ struct tcp_server_struct
 };
 
 void tcp_server_init(void);
-void tcp_server_recvData(void);
 static err_t tcp_server_accept(void *arg, struct tcp_pcb *newpcb, err_t err);
 static err_t tcp_server_recv(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err);
 static void tcp_server_error(void *arg, err_t err);

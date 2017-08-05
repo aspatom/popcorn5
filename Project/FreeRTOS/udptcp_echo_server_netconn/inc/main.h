@@ -59,31 +59,20 @@
 
 #define USE_LCD        /* enable LCD  */  
 //#define USE_DHCP       /* enable DHCP, if disabled static address is used*/
-    	 
-	 
-	 
-#define RECV_IP_ADDR0   192
-#define RECV_IP_ADDR1   168
-#define RECV_IP_ADDR2   1
-#define RECV_IP_ADDR3   27
-
-// Tx
-#define TRANS_PORT       25261
-// Rx
-#define RECV_PORT   25262 
+    
 
 /* MAC ADDRESS*/
-#define MAC_ADDR0   0xA0
-#define MAC_ADDR1   0xCA
-#define MAC_ADDR2   0x11
-#define MAC_ADDR3   0x1A
-#define MAC_ADDR4   0x17
-#define MAC_ADDR5   0xFF
+#define MAC_ADDR0   02
+#define MAC_ADDR1   00
+#define MAC_ADDR2   00
+#define MAC_ADDR3   00
+#define MAC_ADDR4   00
+#define MAC_ADDR5   00
  
 /*Static IP ADDRESS*/
 #define IP_ADDR0   192
 #define IP_ADDR1   168
-#define IP_ADDR2   1
+#define IP_ADDR2   0
 #define IP_ADDR3   10
    
 /*NETMASK*/
@@ -95,7 +84,7 @@
 /*Gateway Address*/
 #define GW_ADDR0   192
 #define GW_ADDR1   168
-#define GW_ADDR2   1
+#define GW_ADDR2   0
 #define GW_ADDR3   1  
 
 /* MII and RMII mode selection, for STM324xG-EVAL Board(MB786) RevB ***********/
@@ -106,12 +95,6 @@
 void Time_Update(void);
 void Delay(uint32_t nCount);
 
-
-
-extern int recv_serial;
-extern int flag_err_recv_serial; 
-extern int flag_server_accept;
-extern int flag_recv_serial;
 
 #ifdef __cplusplus
 }

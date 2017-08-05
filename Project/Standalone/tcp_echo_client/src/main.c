@@ -44,16 +44,13 @@
 #include "stm32f4x7_eth.h"
 #include "netconf.h"
 #include "main.h"
+#include "lwip/tcp.h"
 #include "tcp_echoclient.h"
 #include "jsmn.h"
 #include "TIM_Perlib.h"
 #include "UART_Perlib.h"
 #include "json.h"
 #include "tcp_server.h"
-#include "string.h"
-#include "lwip/sys.h"
-#include "lwip/api.h"
-#include "lwip/tcp.h"
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 #define SYSTEMTICK_PERIOD_MS  10
@@ -83,24 +80,19 @@ static struct tcp_pcb *tcp_pcb;
  
 int recv_serial;
 int flag_err_recv_serial; 
-int flag_server_accept;
-int flag_recv_serial;
- 
 
 extern uint32_t count_uS;	
 extern uint32_t count_mS;	 
 extern uint32_t countT;
 extern uint32_t countTime;
 extern char post_packet[300];
+	
 
 /* Private function prototypes -----------------------------------------------*/
 void LCD_LED_BUTTON_Init(void);
 uint8_t Button_State(void);
 
 void EVAL_LEDInit(void);
-void print_IP(void);
-
-
 /* Private functions ---------------------------------------------------------*/
 
 /**
@@ -122,12 +114,8 @@ int main(void)
 	jsmn_parser p;
 	jsmntok_t t[128]; /* We expect no more than 128 tokens */
 	int r;
-	struct netconn *conn, *newconn;
-	 err_t err, accept_err;
-  struct netbuf *buf;
-  void *data;
-  u16_t len;
-	
+	unsigned char bytes[4];
+
 	
   /*Initialize LCD and Leds */ 
   LCD_LED_BUTTON_Init();
@@ -154,8 +142,6 @@ int main(void)
 	
 	/* Initilaize the flags */
 	flag_err_recv_serial = 0;
-	flag_server_accept = 0;
-	flag_recv_serial = 0;
 	
 	printf("HelloWorld\r\n");
 	json_Packet_Gen();
@@ -166,79 +152,43 @@ int main(void)
 	
 	while (1)
   {
-			//tcp_server_init();
+	
 		
-		
-		while(1)
-			{
-				/* check if any packet received */
-				if (ETH_CheckFrameReceived()) 
-				{ 
-					/* process received ethernet packet */
-					LwIP_Pkt_Handle();
-					tcp_server_recvData();
-				}
-				/* handle periodic timers for LwIP */
-				LwIP_Periodic_Handle(LocalTime);
-			}
-			
-		
-			while(!flag_err_recv_serial)
-			{	
 				/* check if any packet received */
 				if (ETH_CheckFrameReceived()) { 
 					/* process received ethernet packet */
 					LwIP_Pkt_Handle();
-					
 				}
-				while(!flag_recv_serial)
-				{
-					tcp_server_recvData();
-				}
-				USART3_PutString("system >> received Data\r\n");
-			
+				/* handle periodic timers for LwIP */
+				LwIP_Periodic_Handle(LocalTime);
 				
-				STM_EVAL_LEDToggle(LED4);
-				tcp_echoclient_connect();   
-				flag_recv_serial = 0;
-//				if(count_mS >= 500)
-//				{
-//						USART3_PutString("TIME OUT \r\n");
-//						print_IP();
-//						
-//					
-//						count_mS = 0;
-//						tcp_echoclient_connect_sustained();
-//						STM_EVAL_LEDToggle(LED5);
-//				}			
-//				
-//				
-//				
-//		//	  tcp_echoclient_connect_sustained();
-//				if (Button_State()) {
-//					USART3_PutString("Event >> Button Pressed \r\n");
-//					/*connect to tcp server */ 
-//					STM_EVAL_LEDToggle(LED4);
-//					tcp_echoclient_connect();   
-//			 }
-		 }
-			flag_err_recv_serial = 0;
-			flag_server_accept = 0;
-		 flag_recv_serial = 0;
+				if(count_mS >= 500)
+				{
+						USART3_PutString("TIME OUT \r\n");
+						bytes[0] = netif.ip_addr.addr & 0xFF;
+						bytes[1] = (netif.ip_addr.addr >> 8) & 0xFF;
+						bytes[2] = (netif.ip_addr.addr >> 16) & 0xFF;
+						bytes[3] = (netif.ip_addr.addr >> 24) & 0xFF;   
+						printf("%d.%d.%d.%d\n", bytes[3], bytes[2], bytes[1], bytes[0]);	
+					
+						count_mS = 0;
+						tcp_echoclient_connect_sustained();
+						STM_EVAL_LEDToggle(LED5);
+				}			
+				
+				
+				
+		//	  tcp_echoclient_connect_sustained();
+				if (Button_State()) {
+					USART3_PutString("Event >> Button Pressed \r\n");
+					/*connect to tcp server */ 
+					STM_EVAL_LEDToggle(LED4);
+					tcp_echoclient_connect();   
+			 }
 		
   }   
 }
 
-void print_IP(void)
-{
-	unsigned char bytes[4];
-
-	bytes[0] = netif.ip_addr.addr & 0xFF;
-	bytes[1] = (netif.ip_addr.addr >> 8) & 0xFF;
-	bytes[2] = (netif.ip_addr.addr >> 16) & 0xFF;
-	bytes[3] = (netif.ip_addr.addr >> 24) & 0xFF;   
-	printf("Connected IP : %d.%d.%d.%d\r\n", bytes[0], bytes[1], bytes[2], bytes[3]);	
-}
 
 
 /**

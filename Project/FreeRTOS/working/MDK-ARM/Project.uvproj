@@ -374,7 +374,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F4XX, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\;..\inc;..\src;..\..\..\..\Libraries\CMSIS\Include;..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc;..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\..\..\..\Utilities\STM32F4-Discovery;..\..\..\..\Utilities\FreeRTOS_v6.1.0\include;..\..\..\..\Utilities\FreeRTOS_v6.1.0\portable\MDK-ARM\ARM_CM3;..\..\..\..\Utilities\lwip-2.0.2\src\include;..\..\..\..\Utilities\lwip-2.0.2\src\include\lwip;..\..\..\..\Utilities\lwip-2.0.2\src\include\netif</IncludePath>
+              <IncludePath>..\;..\inc;..\src;..\..\..\..\Libraries\CMSIS\Include;..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc;..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\..\..\..\Utilities\STM32F4-Discovery;..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7;..\..\..\..\Utilities\lwip_v1.3.2\src\include;..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4;..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip;..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif;..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS;..\..\..\..\Utilities\FreeRTOS_v6.1.0\include;..\..\..\..\Utilities\FreeRTOS_v6.1.0\portable\MDK-ARM\ARM_CM3</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

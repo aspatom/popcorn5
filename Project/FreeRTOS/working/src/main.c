@@ -48,6 +48,7 @@
 #include "task.h"
 #include "tcpip.h"
 #include "util_Perlib.h"
+#include "ADC_Perlib.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -148,15 +149,18 @@ int main(void)
   
   /* configure ethernet (GPIOs, clocks, MAC, DMA) */ 
   ETH_BSP_Config();
-    
-  /* Initilaize the LwIP stack */
+//    
+//  /* Initilaize the LwIP stack */
   LwIP_Init();
-  
-  /* Initialize tcp server */
+//  
+//  /* Initialize tcp server */
   tcpecho_init();
+     
+	ADC_Configuration();
+   ADC_Task_init();
 	
   /* Initialize tcp Client*/
-	tcp_SendData_init();
+//	tcp_SendData_init();
 	
   /* Initialize LCD Clear*/
 //	LCD_Control_init();

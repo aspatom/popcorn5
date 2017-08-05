@@ -50,9 +50,7 @@ static struct tcp_pcb *tcp_server_pcb;
 
 
 extern int recv_serial;
-extern int flag_server_accept;
 extern int flag_err_recv_serial; 
-extern int flag_recv_serial;
 
 
 
@@ -73,44 +71,26 @@ void tcp_server_init(void)
   if (tcp_server_pcb != NULL) {
     err_t err = ERR_TIMEOUT;
     
-    /* bind echo_pcb to SERVER_PORT */
+    /* bind echo_pcb to SERVER_PORT (ECHO protocol) */
 		
-  // IP4_ADDR( &DestIPaddr, DEST_IP_ADDR0, DEST_IP_ADDR1, DEST_IP_ADDR2, DEST_IP_ADDR3 );
-   err = tcp_bind(tcp_server_pcb, IP_ADDR_ANY, SERVER_PORT);
-
+    IP4_ADDR( &DestIPaddr, DEST_IP_ADDR0, DEST_IP_ADDR1, DEST_IP_ADDR2, DEST_IP_ADDR3 );
+   // while (err != ERR_OK)
+		{
+			err = tcp_bind(tcp_server_pcb, &DestIPaddr, SERVER_PORT);
+    }
     if (err == ERR_OK) {
       /* start tcp listening for echo_pcb */
       tcp_server_pcb = tcp_listen(tcp_server_pcb);
       
       /* initialize LwIP tcp_accept callback function */
       tcp_accept(tcp_server_pcb, tcp_server_accept);
-			flag_server_accept = 1;
     } else {
       printf("Can not bind pcb\n");
-			flag_server_accept = 0;
     }
   } else {
     printf("Can not create new pcb\n");
-		flag_server_accept = 0;
   }
 }
-
-
-/**
-  * @brief  Initializes the tcp echo server
-  * @param  None
-  * @retval None
-  */
-void tcp_server_recvData(void)
-{
-      /* start tcp listening for echo_pcb */
-//      tcp_server_pcb = tcp_listen(tcp_server_pcb);
-	/* initialize LwIP tcp_accept callback function */
-	tcp_accept(tcp_server_pcb, tcp_server_accept);
-	flag_server_accept = 1;
-}
-
-
 
 /**
   * @brief  This function is the implementation of tcp_accept LwIP callback
@@ -220,7 +200,6 @@ static err_t tcp_server_recv(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, er
       es->p = p;
 			sprintf((char*)serial_check, "Serial no: %s \r\n", p->payload);
 			recv_serial  = str2int(p->payload);
-			USART3_PutString("SYSTEM >> GET Serial\r\n");
 			if(recv_serial <= 0)
 			{
 				flag_err_recv_serial = 1;
@@ -228,7 +207,6 @@ static err_t tcp_server_recv(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, er
 			else
 			{
 				flag_err_recv_serial = 0;
-				flag_recv_serial = 1;
 				json_Packet_Gen();
 		}
       /* send back received data */

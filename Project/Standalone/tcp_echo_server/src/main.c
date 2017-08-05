@@ -100,6 +100,7 @@ int main(void)
     if (ETH_CheckFrameReceived()) { 
       /* process received ethernet packet */
       LwIP_Pkt_Handle();
+			netif
     }
     /* handle periodic timers for LwIP */
     LwIP_Periodic_Handle(LocalTime);

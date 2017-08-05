@@ -47,10 +47,12 @@
 #define TCPECHO_THREAD_PRIO  ( tskIDLE_PRIORITY + 3 )
 
 extern char post_packet[450];
+extern uint32_t adcValue;
 int flag_recv_success = 0;
 extern struct netif xnetif;
-static void tcp_sendData_thread(void *arg);
 void tcp_SendData_init(void);
+void tcp_sendData(void); 
+uint16_t parse_recvData(uint8_t* recv_data);
 
 int recv_serial;
 int flag_Client;
@@ -85,7 +87,7 @@ err_t buf_data(char *buf, void **dataptr, u16_t *length)
 static void tcpecho_thread(void *arg)
 {
   struct netconn *conn, *newconn;
-  err_t err, errWrite;
+  err_t err;
 	char str[15];
 	
   LWIP_UNUSED_ARG(arg);
@@ -112,23 +114,24 @@ static void tcpecho_thread(void *arg)
           struct netbuf *buf;
           void *data;
           u16_t len;
-					errWrite = ERR_OK;
-					LCD_LINE_Control(Line3, "Server Connected");
+					//LCD_LINE_Control(Line3, "Server Connected");
 					
           while((buf = netconn_recv(newconn)) != NULL) 
 					{
 							do 
 							{
 								netbuf_data(buf, &data, &len);
-								errWrite = netconn_write(newconn, data, len, NETCONN_COPY);
-								recv_serial  = str2int((uint8_t*)data);
+								netconn_write(newconn, data, len, NETCONN_COPY);
+								recv_serial = parse_recvData(data);
+                                        //recv_serial  = str2int((uint8_t*)data);
 								if(recv_serial >= 0)
 								{
 									flag_recv_success = 1;
 									sprintf(str, "%d", recv_serial);
 									flag_Client = 1;
-									tcp_SendData_init();
-									LCD_LINE_Control(Line2, str);
+									//tcp_sendData_thread(NULL);
+									tcp_sendData();
+									//LCD_LINE_Control(Line2, str);
 								}
 							} while (netbuf_next(buf) >= 0);
 							netbuf_delete(buf);
@@ -137,7 +140,7 @@ static void tcpecho_thread(void *arg)
 					netconn_close(newconn);
 					netconn_delete(newconn);
         }
-				LCD_LINE_Control(Line3, "Server Disconnected");
+			//	LCD_LINE_Control(Line3, "Server Disconnected");
       }
     } else {
       printf(" can not bind TCP netconn");
@@ -149,83 +152,93 @@ static void tcpecho_thread(void *arg)
 
 
 
-/*-----------------------------------------------------------------------------------*/
-static void tcp_sendData_thread(void *arg)
+
+uint16_t parse_recvData(uint8_t* recv_data)
+{
+	int i = 0;
+     int k = 0;
+	uint16_t serial  = 0;
+	char header[5];
+     char cDebug[6];
+     char str[10];
+     char* REAL = "REAL";
+     char* TEST = "TEST";      
+     char str1[20];
+     
+     
+	while( ( (recv_data[i] >= 0x41) || (recv_data[i] <= 0x5A)) && (i < 4))
+	{
+          header[i] = recv_data[i];
+          i++;
+	}
+     header[4] = '\0';
+     serial = 0;
+     if(!strcmp(header, REAL))
+     {    
+          while (*recv_data)
+          {                               
+               serial *= 10;
+               serial += (*(recv_data++) - '0');
+          }
+     }
+     else if(!strcmp(header, TEST))
+     {              
+          k = 0;
+          while((recv_data[i] != '\0') && ( (recv_data[i] >= 0x30) || (recv_data[i] <= 0x39)))
+          {
+               serial *= 10;
+               serial += (uint16_t)(recv_data[i] - '0');
+               i++;
+               //cDebug[k++] = recv_data[i]; 
+          } 
+          sprintf(str1, "%s", cDebug);
+          //LCD_LINE_Control(Line5, str1);
+     }
+     else
+     {    
+          while((recv_data[i] != '\0') && ( (recv_data[i] >= 0x30) || (recv_data[i] <= 0x39)))
+          {
+               serial *= 10;
+               serial += (uint16_t)(recv_data[i] - '0');
+               i++;
+          }          
+     }                  
+     return serial;
+     
+	
+}
+
+
+
+
+
+void tcp_sendData(void)
 {
 	struct netconn *sendConn;
-  err_t err, errSender, errWrite;
-  struct ip_addr recvIPaddr;
-	void *sendData;
+	err_t errConnect;
+	struct ip_addr recvIPaddr;
 	u16_t sendLen;
-	struct netbuf *buf;
-	char *str;
-	char dummyStr[10] = {0,};
-  LWIP_UNUSED_ARG(arg);
+	void *sendData;
 	
-	flag_Client = 0;
 	sendConn = netconn_new(NETCONN_TCP);
 	IP4_ADDR( &recvIPaddr, RECV_IP_ADDR0, RECV_IP_ADDR1, RECV_IP_ADDR2, RECV_IP_ADDR3);
-							
-
-  /* Create a new connection identifier. */
-	while(1)
+	if(sendConn != NULL)
 	{
-		if(sendConn == NULL)
+		errConnect = netconn_connect(sendConn,&recvIPaddr,TRANS_PORT);
+		if(errConnect == ERR_OK)
 		{
-			while((sendConn = netconn_new(NETCONN_TCP)) == NULL);
+			sendLen = strlen((char *)post_packet);
+			json_Packet_Gen();
+			buf_data(post_packet, &sendData, &sendLen);
+			netconn_write(sendConn, sendData, sendLen, NETCONN_COPY);
 		}
-		if(flag_Client == 1)
-		{
-			if(sendConn != NULL)
-			{
-				//errSender = netconn_connect(sendConn,&recvIPaddr,TRANS_PORT);
-				while((errSender = netconn_connect(sendConn,&recvIPaddr,TRANS_PORT)) != ERR_OK);
-				errWrite = ERR_OK;
-				while(errWrite == ERR_OK)
-				{
-					if(errSender == ERR_OK)
-					{
-							//LCD_LINE_Control(Line5, "Client Connected");
-							if(flag_recv_success)
-							{
-								//sprintf(str, "Send OK %d", recv_serial);
-								//LCD_LINE_Control(Line0, str);
-						
-								sendLen = strlen((char *)post_packet);
-								json_Packet_Gen();
-								buf_data(post_packet, &sendData, &sendLen);
-								errWrite = netconn_write(sendConn, sendData, sendLen, NETCONN_COPY);
-								flag_Client = 0;
-								flag_recv_success = 0;
-							}
-//							else
-//							{
-//								sendLen = strlen((char *)dummyStr);
-//								buf_data(dummyStr, &sendData, &sendLen);
-//								errWrite = netconn_write(sendConn, sendData, sendLen, NETCONN_COPY);
-//								LCD_LINE_Control(Line6, "Dummy Send ");
-//								
-//								if(errWrite != ERR_OK)
-//								{
-//										break;
-//								}
-//								//LCD_LINE_Control(Line6, "Send Massage Fail");
-//							}
-					}
-					else
-					{
-							while(netconn_close(sendConn) != ERR_OK);
-							//netconn_delete(sendConn);
-							LCD_LINE_Control(Line5, "Client Disconnected");
-					}
-				}
-				LCD_LINE_Control(Line5, "Client Disconnected");
-				while(netconn_close(sendConn) != ERR_OK);
-				//netconn_delete(sendConn);
-			}
-		}
+	netconn_close(sendConn);
+	netconn_delete(sendConn);
 	}
 }
+
+
+
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -234,13 +247,6 @@ void tcpecho_init(void)
 {
   sys_thread_new("tcpecho_thread", tcpecho_thread, NULL, DEFAULT_THREAD_STACKSIZE, TCPECHO_THREAD_PRIO);
 }
-
-
-void tcp_SendData_init(void)
-{
-  sys_thread_new("tcp_SendData_thread", tcp_sendData_thread, NULL, DEFAULT_THREAD_STACKSIZE, TCPECHO_THREAD_PRIO);
-}
-/*-----------------------------------------------------------------------------------*/
 
 
 

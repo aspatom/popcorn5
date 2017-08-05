@@ -1,5 +1,5 @@
 Dependencies for Project 'Project', Target 'Discover-More': (DO NOT MODIFY !)
-F (..\src\main.c)(0x59654735)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\main.o --omf_browse .\discover-more\main.crf --depend .\discover-more\main.d)
+F (..\src\main.c)(0x5964823E)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\main.o --omf_browse .\discover-more\main.crf --depend .\discover-more\main.d)
 I (..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h)(0x520D27B2)
 I (..\inc\stm32f4x7_eth_conf.h)(0x520D27B2)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x520D27B2)
@@ -37,31 +37,21 @@ I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x520
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x520D27B2)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x520D27B2)
 I (..\inc\netconf.h)(0x59647DD0)
-I (..\inc\main.h)(0x596527C7)
+I (..\inc\main.h)(0x59647C45)
 I (..\inc\stm32f4x7_eth_bsp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery_lcd.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\fonts.h)(0x520D27B2)
-I (..\inc\tcp_echoclient.h)(0x5962652A)
-I (..\inc\jsmn.h)(0x595A9B7D)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F5F8A8)
-I (..\inc\TIM_Perlib.h)(0x595EBC3A)
-I (..\inc\UART_Perlib.h)(0x589C64DB)
-I (..\inc\json.h)(0x596460AA)
-I (..\inc\tcp_server.h)(0x596520A8)
+I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/tcp.h)(0x520D27B2)
+I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
-I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/stats.h)(0x520D27B2)
-I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
-I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/mem.h)(0x520D27B2)
-I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/memp.h)(0x520D27B2)
-I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/memp_std.h)(0x520D27B2)
-I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/tcp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/sys.h)(0x520D27B2)
+I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/mem.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/pbuf.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/err.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/ip.h)(0x520D27B2)
@@ -70,8 +60,16 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/ip_addr.h)(0x520D27B2
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/inet.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/netif.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/icmp.h)(0x520D27B2)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
-I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/api.h)(0x520D27B2)
+I (..\inc\tcp_echoclient.h)(0x5962652A)
+I (..\inc\jsmn.h)(0x595A9B7D)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F5F8A8)
+I (..\inc\TIM_Perlib.h)(0x595EBC3A)
+I (..\inc\UART_Perlib.h)(0x589C64DB)
+I (..\inc\json.h)(0x596460AA)
+I (..\inc\tcp_server.h)(0x596475EE)
+I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/stats.h)(0x520D27B2)
+I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/memp.h)(0x520D27B2)
+I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/memp_std.h)(0x520D27B2)
 F (..\src\system_stm32f4xx.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\system_stm32f4xx.o --omf_browse .\discover-more\system_stm32f4xx.crf --depend .\discover-more\system_stm32f4xx.d)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x520D27B2)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x520D27B2)
@@ -143,13 +141,13 @@ I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x520D2
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x520D27B2)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x520D27B2)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x520D27B2)
-I (..\inc\main.h)(0x596527C7)
+I (..\inc\main.h)(0x59647C45)
 I (..\inc\stm32f4x7_eth_bsp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery_lcd.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\fonts.h)(0x520D27B2)
 I (..\inc\tcp_echoclient.h)(0x5962652A)
-F (..\src\tcp_echoclient.c)(0x596521C5)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\tcp_echoclient.o --omf_browse .\discover-more\tcp_echoclient.crf --depend .\discover-more\tcp_echoclient.d)
+F (..\src\tcp_echoclient.c)(0x59647C8F)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\tcp_echoclient.o --omf_browse .\discover-more\tcp_echoclient.crf --depend .\discover-more\tcp_echoclient.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -157,7 +155,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/stats.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/mem.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/memp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/memp_std.h)(0x520D27B2)
@@ -171,7 +169,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/ip_addr.h)(0x520D27B2
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/inet.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/netif.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/icmp.h)(0x520D27B2)
-I (..\inc\main.h)(0x596527C7)
+I (..\inc\main.h)(0x59647C45)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x520D27B2)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F5F8A8)
@@ -216,10 +214,10 @@ I (..\inc\json.h)(0x596460AA)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F5F8A8)
 I (..\inc\jsmn.h)(0x595A9B7D)
 I (..\inc\tcp_echoclient.h)(0x5962652A)
-F (..\src\netconf.c)(0x59653C17)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\netconf.o --omf_browse .\discover-more\netconf.crf --depend .\discover-more\netconf.d)
+F (..\src\netconf.c)(0x59647CDD)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\netconf.o --omf_browse .\discover-more\netconf.crf --depend .\discover-more\netconf.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/mem.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -241,7 +239,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/udp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif/etharp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/dhcp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone\ethernetif.h)(0x520D27B2)
-I (..\inc\main.h)(0x596527C7)
+I (..\inc\main.h)(0x59647C45)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x520D27B2)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F5F8A8)
@@ -322,7 +320,7 @@ I (..\inc\stm32f4x7_eth_bsp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery_lcd.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\fonts.h)(0x520D27B2)
-I (..\inc\main.h)(0x596527C7)
+I (..\inc\main.h)(0x59647C45)
 F (..\src\jsmn.c)(0x595A9B27)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\jsmn.o --omf_browse .\discover-more\jsmn.crf --depend .\discover-more\jsmn.d)
 I (..\inc\jsmn.h)(0x595A9B7D)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F5F8A8)
@@ -337,7 +335,7 @@ I (..\inc\jsmn.h)(0x595A9B7D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F5F8A8)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
-I (..\inc\main.h)(0x596527C7)
+I (..\inc\main.h)(0x59647C45)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x520D27B2)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x520D27B2)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x520D27B2)
@@ -450,8 +448,8 @@ I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x520
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x520D27B2)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x520D27B2)
 I (..\inc\UART_Perlib.h)(0x589C64DB)
-F (..\src\tcp_server.c)(0x5965412E)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\tcp_server.o --omf_browse .\discover-more\tcp_server.crf --depend .\discover-more\tcp_server.d)
-I (..\inc\tcp_server.h)(0x596520A8)
+F (..\src\tcp_server.c)(0x59647A86)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\tcp_server.o --omf_browse .\discover-more\tcp_server.crf --depend .\discover-more\tcp_server.d)
+I (..\inc\tcp_server.h)(0x596475EE)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -459,7 +457,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/stats.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/mem.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/memp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/memp_std.h)(0x520D27B2)
@@ -473,7 +471,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/ip_addr.h)(0x520D27B2
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/inet.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/netif.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/icmp.h)(0x520D27B2)
-I (..\inc\main.h)(0x596527C7)
+I (..\inc\main.h)(0x59647C45)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x520D27B2)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F5F8A8)
@@ -1015,10 +1013,10 @@ I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x520
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x520D27B2)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
-F (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone\ethernetif.c)(0x5965370E)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\ethernetif.o --omf_browse .\discover-more\ethernetif.crf --depend .\discover-more\ethernetif.d)
+F (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone\ethernetif.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\ethernetif.o --omf_browse .\discover-more\ethernetif.crf --depend .\discover-more\ethernetif.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/mem.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1069,7 +1067,7 @@ I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x520D2
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x520D27B2)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x520D27B2)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x520D27B2)
-I (..\inc\main.h)(0x596527C7)
+I (..\inc\main.h)(0x59647C45)
 I (..\inc\stm32f4x7_eth_bsp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery.h)(0x520D27B2)
 I (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery_lcd.h)(0x520D27B2)
@@ -1077,7 +1075,7 @@ I (..\..\..\..\Utilities\STM32F4-Discovery\fonts.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\api\api_lib.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\api_lib.o --omf_browse .\discover-more\api_lib.crf --depend .\discover-more\api_lib.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1085,7 +1083,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\api\api_msg.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\api_msg.o --omf_browse .\discover-more\api_msg.crf --depend .\discover-more\api_msg.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1094,7 +1092,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\api\err.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\err.o --omf_browse .\discover-more\err.crf --depend .\discover-more\err.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/err.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1102,7 +1100,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\api\netbuf.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\netbuf.o --omf_browse .\discover-more\netbuf.crf --depend .\discover-more\netbuf.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1111,7 +1109,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\api\netdb.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\netdb.o --omf_browse .\discover-more\netdb.crf --depend .\discover-more\netdb.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/netdb.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1119,7 +1117,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\api\netifapi.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\netifapi.o --omf_browse .\discover-more\netifapi.crf --depend .\discover-more\netifapi.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1127,7 +1125,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\api\sockets.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\sockets.o --omf_browse .\discover-more\sockets.crf --depend .\discover-more\sockets.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1135,7 +1133,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\api\tcpip.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\tcpip.o --omf_browse .\discover-more\tcpip.crf --depend .\discover-more\tcpip.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1143,7 +1141,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\dhcp.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\dhcp.o --omf_browse .\discover-more\dhcp.crf --depend .\discover-more\dhcp.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1169,7 +1167,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/dns.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\dns.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\dns.o --omf_browse .\discover-more\dns.crf --depend .\discover-more\dns.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1177,7 +1175,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\init.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\init.o --omf_browse .\discover-more\init.crf --depend .\discover-more\init.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1210,7 +1208,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/igmp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/dns.h)(0x520D27B2)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\mem.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\mem.o --omf_browse .\discover-more\mem.crf --depend .\discover-more\mem.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1225,7 +1223,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/memp_std.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\memp.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\memp.o --omf_browse .\discover-more\memp.crf --depend .\discover-more\memp.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1256,7 +1254,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/ip_frag.h)(0x520D27B2
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\netif.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\netif.o --omf_browse .\discover-more\netif.crf --depend .\discover-more\netif.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1281,7 +1279,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/autoip.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/dhcp.h)(0x520D27B2)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\pbuf.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\pbuf.o --omf_browse .\discover-more\pbuf.crf --depend .\discover-more\pbuf.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1299,7 +1297,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/perf.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\raw.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\raw.o --omf_browse .\discover-more\raw.crf --depend .\discover-more\raw.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1323,7 +1321,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/perf.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\stats.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\stats.o --omf_browse .\discover-more\stats.crf --depend .\discover-more\stats.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1331,7 +1329,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\sys.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\sys.o --omf_browse .\discover-more\sys.crf --depend .\discover-more\sys.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1339,7 +1337,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\tcp.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\tcp.o --omf_browse .\discover-more\tcp.crf --depend .\discover-more\tcp.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1364,7 +1362,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/stats.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\tcp_in.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\tcp_in.o --omf_browse .\discover-more\tcp_in.crf --depend .\discover-more\tcp_in.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1390,7 +1388,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/udp.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/perf.h)(0x520D27B2)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\tcp_out.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\tcp_out.o --omf_browse .\discover-more\tcp_out.crf --depend .\discover-more\tcp_out.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1416,7 +1414,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/udp.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\udp.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\udp.o --omf_browse .\discover-more\udp.crf --depend .\discover-more\udp.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1442,7 +1440,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/dhcp.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\ipv4\autoip.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\autoip.o --omf_browse .\discover-more\autoip.crf --depend .\discover-more\autoip.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1463,7 +1461,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F5F8A8)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\ipv4\icmp.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\icmp.o --omf_browse .\discover-more\icmp.crf --depend .\discover-more\icmp.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1487,7 +1485,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/udp.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\ipv4\igmp.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\igmp.o --omf_browse .\discover-more\igmp.crf --depend .\discover-more\igmp.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1495,7 +1493,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cpu.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\ipv4\inet.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\inet.o --omf_browse .\discover-more\inet.crf --depend .\discover-more\inet.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1504,7 +1502,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F5F8A8)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/inet.h)(0x520D27B2)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\ipv4\inet_chksum.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\inet_chksum.o --omf_browse .\discover-more\inet_chksum.crf --depend .\discover-more\inet_chksum.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1518,7 +1516,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/inet.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\ipv4\ip.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\ip.o --omf_browse .\discover-more\ip.crf --depend .\discover-more\ip.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1549,7 +1547,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/perf.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\ipv4\ip_addr.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\ip_addr.o --omf_browse .\discover-more\ip_addr.crf --depend .\discover-more\ip_addr.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1562,7 +1560,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/err.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/pbuf.h)(0x520D27B2)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\core\ipv4\ip_frag.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\ip_frag.o --omf_browse .\discover-more\ip_frag.crf --depend .\discover-more\ip_frag.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1587,7 +1585,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4\lwip/icmp.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\netif\etharp.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\etharp.o --omf_browse .\discover-more\etharp.crf --depend .\discover-more\etharp.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1612,7 +1610,7 @@ I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif/etharp.h)(0x520D27B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F5F8A8)
 F (..\..\..\..\Utilities\lwip_v1.3.2\src\netif\loopif.c)(0x520D27B2)(--c99 -c --cpu Cortex-M4 -D__MICROLIB -g -O1 --apcs=interwork -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\Standalone -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F4XX -DUSE_STDPERIPH_DRIVER-o .\discover-more\loopif.o --omf_browse .\discover-more\loopif.crf --depend .\discover-more\loopif.d)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)
@@ -1622,7 +1620,7 @@ F (..\..\..\..\Utilities\lwip_v1.3.2\src\netif\slipif.c)(0x520D27B2)(--c99 -c --
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif/slipif.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/netif.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/opt.h)(0x520D27B2)
-I (..\inc\lwipopts.h)(0x59654869)
+I (..\inc\lwipopts.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/debug.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip/arch.h)(0x520D27B2)
 I (..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\arch/cc.h)(0x520D27B2)

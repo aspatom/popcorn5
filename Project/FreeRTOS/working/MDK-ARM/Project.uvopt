@@ -8,7 +8,7 @@
   <Extensions>
     <cExt>*.c</cExt>
     <aExt>*.s*; *.src; *.a*</aExt>
-    <oExt>*.obj</oExt>
+    <oExt>*.obj; *.o</oExt>
     <lExt>*.lib</lExt>
     <tExt>*.txt; *.h; *.inc</tExt>
     <pExt>*.plm</pExt>
@@ -162,94 +162,51 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>191</LineNumber>
+          <LineNumber>178</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134219892</Address>
+          <Address>134220170</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\JungHoon\Desktop\?묒뾽以??몄＜\popcorn5\source_code\STM32F4xx_Ethernet_Example 170711_v2\Project\FreeRTOS\working\src\tcpecho.c</Filename>
+          <Filename>C:\Users\JungHoon\Desktop\?묒뾽以??몄＜\popcorn5\source_code\1\STM32F4xx_Ethernet_Example 170711_v2\Project\FreeRTOS\working\src\tcpecho.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\Project\../src/tcpecho.c\191</Expression>
+          <Expression>\\Project\../src/tcpecho.c\178</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>191</LineNumber>
+          <LineNumber>180</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220004</Address>
+          <Address>134220184</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\JungHoon\Desktop\?묒뾽以??몄＜\popcorn5\source_code\STM32F4xx_Ethernet_Example 170711_v2\Project\FreeRTOS\working\src\tcpecho.c</Filename>
+          <Filename>C:\Users\JungHoon\Desktop\?묒뾽以??몄＜\popcorn5\source_code\1\STM32F4xx_Ethernet_Example 170711_v2\Project\FreeRTOS\working\src\tcpecho.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\Project\../src/tcpecho.c\191</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>199</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220054</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\JungHoon\Desktop\?묒뾽以??몄＜\popcorn5\source_code\STM32F4xx_Ethernet_Example 170711_v2\Project\FreeRTOS\working\src\tcpecho.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\Project\../src/tcpecho.c\199</Expression>
-        </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>201</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220070</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\JungHoon\Desktop\?묒뾽以??몄＜\popcorn5\source_code\STM32F4xx_Ethernet_Example 170711_v2\Project\FreeRTOS\working\src\tcpecho.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\Project\../src/tcpecho.c\201</Expression>
-        </Bp>
-        <Bp>
-          <Number>4</Number>
-          <Type>0</Type>
-          <LineNumber>197</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220040</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\JungHoon\Desktop\?묒뾽以??몄＜\popcorn5\source_code\STM32F4xx_Ethernet_Example 170711_v2\Project\FreeRTOS\working\src\tcpecho.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\Project\../src/tcpecho.c\197</Expression>
+          <Expression>\\Project\../src/tcpecho.c\180</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>flag_recv_success</ItemText>
+          <ItemText>errWrite</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>errSender</ItemText>
+          <ItemText>sendData</ItemText>
+        </Ww>
+        <Ww>
+          <count>2</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>sendConn</ItemText>
         </Ww>
       </WatchWindow1>
       <MemoryWindow1>
@@ -459,7 +416,7 @@
 
   <Group>
     <GroupName>STM32F4-Discovery</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -619,7 +576,7 @@
 
   <Group>
     <GroupName>STM32F4x7_ETH_Driver</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -639,7 +596,7 @@
 
   <Group>
     <GroupName>LWIP</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -1031,7 +988,7 @@
       <GroupNumber>5</GroupNumber>
       <FileNumber>57</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\Utilities\lwip_v1.3.2\src\netif\slipif.c</PathWithFileName>
@@ -1067,7 +1024,7 @@
 
   <Group>
     <GroupName>FreeRTOS</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -1167,7 +1124,7 @@
 
   <Group>
     <GroupName>Readme</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

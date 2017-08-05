@@ -45,7 +45,7 @@ u8_t   data[100];
 
 extern int recv_serial;
 extern int flag_err_recv_serial; 
-extern int flag_recv_serial;
+
 
 __IO u8_t Tcp_flag = 0;
 
@@ -169,6 +169,7 @@ static err_t tcp_echoclient_connected(void *arg, struct tcp_pcb *tpcb, err_t err
 			else
 			{
 					//data will be defined at here
+      sprintf((char*)data, "POST /check HTTP/1.1\r\nHost: 192.168.1.27\r\n\r\n");
       //sprintf((char*)data, "sending tcp client message %d", message_count);
         
       /* allocate pbuf */

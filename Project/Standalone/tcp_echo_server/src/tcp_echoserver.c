@@ -41,17 +41,6 @@
 
 #if LWIP_TCP
 
-
-#define DEST_IP_ADDR0   192
-#define DEST_IP_ADDR1   168
-#define DEST_IP_ADDR2   1
-#define DEST_IP_ADDR3   10
-
-#define DEST_PORT       25261
-// Rx
-#define SERVER_PORT   25262 
-
-
 static struct tcp_pcb *tcp_echoserver_pcb;
 
 /* ECHO protocol states */
@@ -89,7 +78,6 @@ static void tcp_echoserver_connection_close(struct tcp_pcb *tpcb, struct tcp_ech
   */
 void tcp_echoserver_init(void)
 {
-  struct ip_addr DestIPaddr;
   /* create new tcp pcb */
   tcp_echoserver_pcb = tcp_new();
 
@@ -97,9 +85,7 @@ void tcp_echoserver_init(void)
     err_t err;
     
     /* bind echo_pcb to port 7 (ECHO protocol) */
-		
-   //err = tcp_bind(tcp_echoserver_pcb, &DestIPaddr, SERVER_PORT);
-    err = tcp_bind(tcp_echoserver_pcb, IP_ADDR_ANY, 25262);
+    err = tcp_bind(tcp_echoserver_pcb, IP_ADDR_ANY, 7);
     
     if (err == ERR_OK) {
       /* start tcp listening for echo_pcb */

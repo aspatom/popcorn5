@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Discover-More\Project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Discover-More\Project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Wed Jul 12 04:31:29 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Mon Jul 10 01:34:12 2017
 <BR><P>
 <H3>Maximum Stack Usage =        476 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -291,7 +291,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[77]"></a>tcp_echoserver_init</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, tcp_echoserver.o(.text))
+<P><STRONG><a name="[77]"></a>tcp_echoserver_init</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, tcp_echoserver.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 372<LI>Call Chain = tcp_echoserver_init &rArr; tcp_new &rArr; tcp_alloc &rArr; tcp_kill_prio &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_output_segment &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new
@@ -744,8 +744,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d3]"></a>RCC_AHB1PeriphResetCmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ETH_DeInit
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_DeInit
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_DeInit
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ETH_DeInit
 </UL>
 
 <P><STRONG><a name="[1d6]"></a>RCC_AHB2PeriphResetCmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text), UNUSED)
@@ -1177,12 +1177,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = mem_malloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_accept
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_calloc
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
 <LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_start
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_unfold_reply
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
-<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
 </UL>
 
 <P><STRONG><a name="[121]"></a>mem_calloc</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, mem.o(.text), UNUSED)
@@ -1212,6 +1212,7 @@ Global Symbols
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
@@ -1220,23 +1221,22 @@ Global Symbols
 <LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
 <LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_etharp_q
 <LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_dequeue_datagram
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[fb]"></a>netif_set_gw</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, netif.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_addr
+<BR><BR>[Called By]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_bind
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_addr
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
 <LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_bind
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_handle_nak
-<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_bind
 </UL>
 
 <P><STRONG><a name="[fc]"></a>netif_set_netmask</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, netif.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_addr
+<BR><BR>[Called By]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_bind
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_addr
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
 <LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_bind
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_handle_nak
-<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_bind
 </UL>
 
 <P><STRONG><a name="[fa]"></a>netif_set_ipaddr</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, netif.o(.text))
@@ -1244,11 +1244,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
 </UL>
-<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_addr
+<BR>[Called By]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_bind
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_addr
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
 <LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_bind
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_handle_nak
-<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_bind
 </UL>
 
 <P><STRONG><a name="[123]"></a>netif_set_addr</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, netif.o(.text))
@@ -1286,23 +1286,23 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_request
 </UL>
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LwIP_Init
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_bind
 <LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_bind
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_bind
 </UL>
 
 <P><STRONG><a name="[f9]"></a>netif_set_down</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, netif.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_network_changed
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_handle_nak
-<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_stop
+<BR><BR>[Called By]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_stop
 <LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_network_changed
 <LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_network_changed
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_handle_nak
 </UL>
 
 <P><STRONG><a name="[162]"></a>netif_is_up</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, netif.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
-<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<BR><BR>[Called By]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
 <LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
 </UL>
 
 <P><STRONG><a name="[a2]"></a>pbuf_free</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, pbuf.o(.text))
@@ -1315,6 +1315,15 @@ Global Symbols
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_send
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernetif_input
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
+<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
@@ -1336,15 +1345,6 @@ Global Symbols
 <LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_etharp_q
 <LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_chain_frag_into_datagram_and_validate
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
-<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
-<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
-<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
-<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
-<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
-<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[ed]"></a>pbuf_alloc</STRONG> (Thumb, 298 bytes, Stack size 32 bytes, pbuf.o(.text))
@@ -1354,7 +1354,12 @@ Global Symbols
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<BR>[Called By]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
@@ -1364,11 +1369,6 @@ Global Symbols
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_create_request
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_input
-<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
-<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
-<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
-<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
 </UL>
 
 <P><STRONG><a name="[f6]"></a>pbuf_realloc</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, pbuf.o(.text))
@@ -1377,7 +1377,10 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_realloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<BR>[Called By]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
 <LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_decline
@@ -1385,33 +1388,30 @@ Global Symbols
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
-<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
-<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 </UL>
 
 <P><STRONG><a name="[131]"></a>pbuf_header</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, pbuf.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pbuf_header
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
 <LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
 <LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
 <LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
 </UL>
 
 <P><STRONG><a name="[14f]"></a>pbuf_clen</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, pbuf.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<BR><BR>[Called By]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
 <LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_chain_frag_into_datagram_and_validate
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
-<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 </UL>
 
 <P><STRONG><a name="[a1]"></a>pbuf_ref</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, pbuf.o(.text))
@@ -1424,8 +1424,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pbuf_cat
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_chain
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
 <LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
 </UL>
 
 <P><STRONG><a name="[a5]"></a>pbuf_chain</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, pbuf.o(.text))
@@ -1435,9 +1435,9 @@ Global Symbols
 <LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
 </UL>
 <BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_recv
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
-<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
 </UL>
 
 <P><STRONG><a name="[12a]"></a>pbuf_dechain</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, pbuf.o(.text), UNUSED)
@@ -1449,9 +1449,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_coalesce
+<BR>[Called By]<UL><LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_coalesce
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
-<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 </UL>
 
 <P><STRONG><a name="[115]"></a>pbuf_copy_partial</STRONG> (Thumb, 106 bytes, Stack size 32 bytes, pbuf.o(.text))
@@ -1459,8 +1459,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_unfold_reply
-<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
+<BR>[Called By]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_unfold_reply
 </UL>
 
 <P><STRONG><a name="[12c]"></a>pbuf_take</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, pbuf.o(.text), UNUSED)
@@ -1517,10 +1517,10 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
 </UL>
 
 <P><STRONG><a name="[138]"></a>tcp_segs_free</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, tcp.o(.text))
@@ -1539,9 +1539,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
+<BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 </UL>
 
 <P><STRONG><a name="[13a]"></a>tcp_slowtmr</STRONG> (Thumb, 550 bytes, Stack size 40 bytes, tcp.o(.text))
@@ -1606,8 +1606,8 @@ Global Symbols
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 </UL>
-<BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<BR>[Called By]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> tcp.o(.text)
 </UL>
@@ -1638,11 +1638,11 @@ Global Symbols
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
 </UL>
 <BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_poll
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_kill_timewait
 <LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_kill_prio
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_ipaddr
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 </UL>
 
 <P><STRONG><a name="[a9]"></a>tcp_bind</STRONG> (Thumb, 196 bytes, Stack size 24 bytes, tcp.o(.text))
@@ -1667,9 +1667,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
 <LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
 </UL>
 
 <P><STRONG><a name="[148]"></a>tcp_next_iss</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, tcp.o(.text))
@@ -1745,6 +1745,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 420<LI>Call Chain = tcp_input &rArr; tcp_listen_input &rArr; tcp_alloc &rArr; tcp_kill_prio &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_output_segment &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timewait_input
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
@@ -1753,10 +1757,6 @@ Global Symbols
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
-<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timewait_input
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 </UL>
 <BR>[Called By]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
 </UL>
@@ -1766,6 +1766,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htonl
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
 <LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
@@ -1776,12 +1777,11 @@ Global Symbols
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
 <LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_ctrl
 <LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
 </UL>
 
 <P><STRONG><a name="[141]"></a>tcp_send_ctrl</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, tcp_out.o(.text))
@@ -1805,36 +1805,36 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htonl
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
 <LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_set_header
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 </UL>
 
 <P><STRONG><a name="[13f]"></a>tcp_output</STRONG> (Thumb, 416 bytes, Stack size 32 bytes, tcp_out.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = tcp_output &rArr; tcp_output_segment &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
-<BR>[Calls]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
-<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
+<BR>[Calls]<UL><LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
 <LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recved
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
-<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 <LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 <LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timewait_input
 <LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
 <LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 </UL>
 
 <P><STRONG><a name="[13e]"></a>tcp_rst</STRONG> (Thumb, 158 bytes, Stack size 48 bytes, tcp_out.o(.text))
@@ -1842,17 +1842,17 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htonl
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 <LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 <LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timewait_input
 <LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
 <LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 </UL>
 
 <P><STRONG><a name="[13c]"></a>tcp_rexmit_rto</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, tcp_out.o(.text))
@@ -1885,9 +1885,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htonl
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
 <LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_set_header
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 </UL>
@@ -1896,11 +1896,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = tcp_zero_window_probe &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
 <LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_set_header
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 </UL>
@@ -1909,11 +1909,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 284<LI>Call Chain = udp_input &rArr; icmp_dest_unreach &rArr; icmp_send_response &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
-<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
 </UL>
 <BR>[Called By]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
 </UL>
@@ -1932,13 +1932,14 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_chain
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
 <LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_bind
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
+<BR>[Called By]<UL><LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_inform
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_release
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_renew
 <LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_decline
@@ -1946,7 +1947,6 @@ Global Symbols
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_rebind
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_discover
-<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
 </UL>
 
 <P><STRONG><a name="[15e]"></a>udp_sendto</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, udp.o(.text), UNUSED)
@@ -1994,18 +1994,18 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = autoip_start &rArr; mem_malloc
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
-<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_is_up
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_down
 <LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_create_addr
 <LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start_probing
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_is_up
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_down
 </UL>
 <BR>[Called By]<UL><LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_arp_reply
 <LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_handle_arp_conflict
 </UL>
 
 <P><STRONG><a name="[169]"></a>autoip_network_changed</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, autoip.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_down
-<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start_probing
+<BR><BR>[Calls]<UL><LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start_probing
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_set_down
 </UL>
 
 <P><STRONG><a name="[16a]"></a>autoip_stop</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, autoip.o(.text), UNUSED)
@@ -2021,9 +2021,9 @@ Global Symbols
 <P><STRONG><a name="[16c]"></a>autoip_arp_reply</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, autoip.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = autoip_arp_reply &rArr; autoip_handle_arp_conflict &rArr; autoip_arp_announce &rArr; etharp_raw &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
-<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
+<BR>[Calls]<UL><LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_start
 <LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_handle_arp_conflict
+<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 </UL>
 <BR>[Called By]<UL><LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
 </UL>
@@ -2032,15 +2032,15 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = icmp_input &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pbuf
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
-<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pbuf
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 </UL>
 <BR>[Called By]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
 </UL>
@@ -2064,6 +2064,12 @@ Global Symbols
 
 <P><STRONG><a name="[7f]"></a>htonl</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, inet.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LwIP_Init
+<LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_aton
+<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_bind
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_create_addr
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_set_header
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
@@ -2072,12 +2078,6 @@ Global Symbols
 <LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_bind
 <LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_handle_offer
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_create_request
-<LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_aton
-<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_bind
-<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_create_addr
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
-<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_set_header
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
 </UL>
 
 <P><STRONG><a name="[173]"></a>inet_aton</STRONG> (Thumb, 276 bytes, Stack size 36 bytes, inet.o(.text), UNUSED)
@@ -2094,15 +2094,6 @@ Global Symbols
 
 <P><STRONG><a name="[150]"></a>htons</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, inet.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
-<LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
-<LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_send_ip
 <LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
 <LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
 <LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
@@ -2113,19 +2104,21 @@ Global Symbols
 <LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
 <LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_set_header
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+<LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
+<LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_send_ip
 </UL>
 
 <P><STRONG><a name="[12f]"></a>ntohs</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, inet.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_input
-<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_chain_frag_into_datagram_and_validate
-<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
+<BR>[Called By]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
 <LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
 <LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
 <LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
@@ -2134,12 +2127,28 @@ Global Symbols
 <LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parseopt
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_input
+<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_chain_frag_into_datagram_and_validate
 </UL>
 
 <P><STRONG><a name="[100]"></a>ntohl</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, inet.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htonl
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<BR>[Called By]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_create_addr
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
 <LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_decline
@@ -2149,15 +2158,6 @@ Global Symbols
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_select
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
 <LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
-<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
-<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
-<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_create_addr
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
-<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 </UL>
 
 <P><STRONG><a name="[176]"></a>inet_chksum_pseudo</STRONG> (Thumb, 134 bytes, Stack size 32 bytes, inet_chksum.o(.text), UNUSED)
@@ -2188,22 +2188,17 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_is_up
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_eff_send_mss
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
-<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
+<BR>[Called By]<UL><LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
 <LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_eff_send_mss
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
 </UL>
 
 <P><STRONG><a name="[177]"></a>ip_input</STRONG> (Thumb, 436 bytes, Stack size 40 bytes, ip.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 460<LI>Call Chain = ip_input &rArr; tcp_input &rArr; tcp_listen_input &rArr; tcp_alloc &rArr; tcp_kill_prio &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_output_segment &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_input
-<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_is_up
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
-<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
 <LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
 <LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
@@ -2211,6 +2206,11 @@ Global Symbols
 <LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 <LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_input
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_is_up
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
 </UL>
@@ -2218,15 +2218,15 @@ Global Symbols
 <P><STRONG><a name="[133]"></a>ip_output_if</STRONG> (Thumb, 210 bytes, Stack size 40 bytes, ip.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
-<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
-<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
+<BR>[Calls]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
 </UL>
-<BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
-<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<BR>[Called By]<UL><LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raw_sendto
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
 </UL>
 
 <P><STRONG><a name="[15a]"></a>ip_output</STRONG> (Thumb, 52 bytes, Stack size 40 bytes, ip.o(.text))
@@ -2235,22 +2235,22 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
-<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
-<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
+<BR>[Called By]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
 <LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
 <LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
 </UL>
 
 <P><STRONG><a name="[158]"></a>ip_addr_isbroadcast</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, ip_addr.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
-<LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
-<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<BR><BR>[Called By]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
 <LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
 <LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
+<LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
 </UL>
 
 <P><STRONG><a name="[17c]"></a>ip_reass_tmr</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, ip_frag.o(.text), UNUSED)
@@ -2261,6 +2261,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 348<LI>Call Chain = ip_reass &rArr; ip_reass_enqueue_new_datagram &rArr; ip_reass_remove_oldest_datagram &rArr; ip_reass_free_complete_datagram &rArr; icmp_time_exceeded &rArr; icmp_send_response &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
 <LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
 <LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
@@ -2270,8 +2272,6 @@ Global Symbols
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
 <LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_remove_oldest_datagram
 <LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_dequeue_datagram
-<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 </UL>
 <BR>[Called By]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
 </UL>
@@ -2281,13 +2281,13 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_chain
+<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy_partial
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 </UL>
 <BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output_if
 </UL>
@@ -2316,10 +2316,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = etharp_arp_input &rArr; dhcp_arp_reply &rArr; dhcp_decline &rArr; udp_sendto_if &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
-<LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
 <LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_arp_reply
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_arp_reply
+<LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_arp_entry
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
 </UL>
@@ -2328,12 +2328,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = etharp_raw &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_request
-<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_arp_probe
+<BR>[Called By]<UL><LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_arp_probe
 <LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;autoip_arp_announce
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_request
 </UL>
 
 <P><STRONG><a name="[125]"></a>etharp_request</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, etharp.o(.text))
@@ -2350,6 +2350,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_ref
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
 <LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_request
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
@@ -2357,7 +2358,6 @@ Global Symbols
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_send_ip
 <LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_entry
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
 </UL>
 <BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_check
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
@@ -2366,11 +2366,11 @@ Global Symbols
 <P><STRONG><a name="[64]"></a>etharp_output</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, etharp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = etharp_output &rArr; etharp_query &rArr; etharp_request &rArr; etharp_raw &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
-<BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
+<BR>[Calls]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
 <LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_send_ip
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> ethernetif.o(.text)
 </UL>
@@ -2378,11 +2378,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 476<LI>Call Chain = ethernet_input &rArr; ip_input &rArr; tcp_input &rArr; tcp_listen_input &rArr; tcp_alloc &rArr; tcp_kill_prio &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_output_segment &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
 <LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
 <LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_ip_input
-<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_input
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> netconf.o(.text)
 </UL>
@@ -2640,7 +2640,10 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f4xx.o(RESET)
 </UL>
 <P><STRONG><a name="[e9]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
+<BR><BR>[Called By]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
+<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
 <LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_take
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy_partial
@@ -2648,9 +2651,6 @@ Global Symbols
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_output
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
-<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
-<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag
-<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
 </UL>
 
 <P><STRONG><a name="[22a]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
@@ -3325,7 +3325,10 @@ Local Symbols
 <P><STRONG><a name="[14d]"></a>tcp_receive</STRONG> (Thumb, 1128 bytes, Stack size 24 bytes, tcp_in.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 284<LI>Call Chain = tcp_receive &rArr; tcp_output &rArr; tcp_output_segment &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_fast
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_update_rcv_ann_wnd
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
@@ -3333,9 +3336,6 @@ Local Symbols
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_fast
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
 </UL>
 <BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 </UL>
@@ -3353,15 +3353,15 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 380<LI>Call Chain = tcp_process &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_output_segment &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parseopt
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_eff_send_mss
 <LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
-<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parseopt
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 </UL>
 <BR>[Called By]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
@@ -3370,12 +3370,12 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 388<LI>Call Chain = tcp_listen_input &rArr; tcp_alloc &rArr; tcp_kill_prio &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_output_segment &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parseopt
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue
 <LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_alloc
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_eff_send_mss
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parseopt
 </UL>
 <BR>[Called By]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
@@ -3393,22 +3393,22 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = tcp_output_set_header
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htonl
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<BR>[Called By]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
 </UL>
 
 <P><STRONG><a name="[15b]"></a>tcp_output_segment</STRONG> (Thumb, 170 bytes, Stack size 24 bytes, tcp_out.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = tcp_output_segment &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htonl
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
-<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htons
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_route
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 </UL>
@@ -3467,10 +3467,10 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = icmp_send_response &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
-<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_output
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_time_exceeded
 <LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
@@ -3491,18 +3491,18 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
 </UL>
-<BR>[Called By]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
-<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
+<BR>[Called By]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
+<LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
 </UL>
 
 <P><STRONG><a name="[17b]"></a>ip_reass_free_complete_datagram</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, ip_frag.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = ip_reass_free_complete_datagram &rArr; icmp_time_exceeded &rArr; icmp_send_response &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_time_exceeded
 <LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_dequeue_datagram
-<LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_time_exceeded
 </UL>
 <BR>[Called By]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_tmr
 <LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_remove_oldest_datagram
@@ -3513,8 +3513,8 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
 </UL>
-<BR>[Called By]<UL><LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
-<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
+<BR>[Called By]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass
+<LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
 </UL>
 
 <P><STRONG><a name="[17e]"></a>ip_reass_enqueue_new_datagram</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, ip_frag.o(.text))
@@ -3572,11 +3572,11 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = update_arp_entry &rArr; find_entry &rArr; free_etharp_q &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ntohl
 <LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_send_ip
 <LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_entry
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_addr_isbroadcast
 </UL>
 <BR>[Called By]<UL><LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_arp_input
 <LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_ip_input

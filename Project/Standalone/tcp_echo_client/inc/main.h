@@ -59,20 +59,16 @@
 /* Exported constants --------------------------------------------------------*/
 
 //	 #define USE_LCD        /* enable LCD  */  
-//#define USE_DHCP       /* enable DHCP, if disabled static address is used */
+#define USE_DHCP       /* enable DHCP, if disabled static address is used */
 
-#if 1
+#if 0
 	 
 #define DEST_IP_ADDR0   192
 #define DEST_IP_ADDR1   168
 #define DEST_IP_ADDR2   1
 #define DEST_IP_ADDR3   27
 
-	 
-// Tx
-#define DEST_PORT       25261
-// Rx
-#define SERVER_PORT   25262 
+#define DEST_PORT       25260
 
 /* MAC ADDRESS: MAC_ADDR0:MAC_ADDR1:MAC_ADDR2:MAC_ADDR3:MAC_ADDR4:MAC_ADDR5 */
 #define MAC_ADDR0   0xA0
@@ -104,7 +100,7 @@
 
 // TEST in POPCORN5 OFFICE
 
-#if 0
+#if 1
 	 
 #define DEST_IP_ADDR0   192
 #define DEST_IP_ADDR1   168
@@ -198,8 +194,6 @@ void Delay(uint32_t nCount);
 
 extern int recv_serial;
 extern int flag_err_recv_serial; 
-extern int flag_server_accept;
-extern int flag_recv_serial;
 
 
 

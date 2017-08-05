@@ -48,7 +48,7 @@
 #include "lwip/netif.h"
 #include "lwip/icmp.h"
 #include "lwip/udp.h"
-#include "lwip/tcp_impl.h"
+#include "lwip/tcp.h"
 
 #include "lwip/stats.h"
 
@@ -341,9 +341,9 @@ ip_output_hinted(struct pbuf *p, struct ip_addr *src, struct ip_addr *dest,
     return ERR_RTE;
   }
 
-  LWIP_NETIF_HWADDRHINT(netif, addr_hint);
+  netif->addr_hint = addr_hint;
   err = ip_output_if(p, src, dest, ttl, tos, proto, netif);
-  LWIP_NETIF_HWADDRHINT(netif, NULL);
+  netif->addr_hint = NULL;
 
   return err;
 }

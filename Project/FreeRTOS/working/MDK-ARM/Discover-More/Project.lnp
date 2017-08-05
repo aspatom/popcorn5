@@ -10,6 +10,7 @@
 ".\discover-more\json.o"
 ".\discover-more\uart_perlib.o"
 ".\discover-more\util_perlib.o"
+".\discover-more\adc_perlib.o"
 ".\discover-more\stm32f4_discovery_lcd.o"
 ".\discover-more\stm32f4_discovery.o"
 ".\discover-more\stm32f4xx_usart.o"

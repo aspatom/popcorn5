@@ -65,23 +65,13 @@
 /* Private variables ---------------------------------------------------------*/
 extern struct netif xnetif;
 __IO uint32_t test;
-
-
-
-int recv_serial;
-int flag_err_recv_serial; 
-int flag_server_accept;
-int flag_recv_serial;
-
+ 
 /* Private function prototypes -----------------------------------------------*/
 void LCD_LED_Init(void);
 extern void tcpecho_init(void);
 extern void udpecho_init(void);
-extern void tcp_SendData_init(void);
 
 /* Private functions ---------------------------------------------------------*/
-
-
 
 /**
   * @brief  Toggle Led4 task
@@ -128,7 +118,7 @@ int main(void)
   
   /* Initialize tcp echo server */
   tcpecho_init();
-	tcp_SendData_init();
+  
   /* Initialize udp echo server */
   udpecho_init();
 

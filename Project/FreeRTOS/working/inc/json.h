@@ -20,8 +20,9 @@ int str2int(uint8_t *str);
 	
 	
 	
-extern int recv_serial;	
+extern int recv_serial;
 extern char post_packet[450];
+extern uint32_t adcValue;
 	
 	
 	

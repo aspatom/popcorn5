@@ -26,6 +26,7 @@ int RTC_second = 7;
 
 
 extern int recv_serial;
+extern uint32_t adcValue;
 
 
 static int jsoneq(const char *json, jsmntok_t *tok, const char *s) {
@@ -98,19 +99,23 @@ uint8_t json_Packet_Gen(void)
 {
 	//char* json_packet;
 	
-	char json_packet[300]; 
-	char mac_addr[40];
+	char json_packet[750]; 
+	char mac_addr[60];
 	char request_serial_no[40];
-	char check_Time[40];
-	char check_data[150];
-	
+	char check_Time[60];
+	char check_data[120];                                            
+	char check_data2[420];
 	int contentLength;
 	
 	sprintf((char*)mac_addr, "\"iot_mac_addr\":\"%02X:%02X:%02X:%02X:%02X:%02X\"", MAC_ADDR0, MAC_ADDR1,MAC_ADDR2,MAC_ADDR3,MAC_ADDR4,MAC_ADDR5);
 	sprintf((char*)request_serial_no, "\"iot_request_history_id\":\"%d\"", recv_serial);
 	sprintf((char*)check_Time, "\"check_time\":\"%.4d-%.2d-%.2d:%.2d:%.2d:%.2d\"", RTC_year,RTC_month, RTC_day, RTC_hour, RTC_minute, RTC_second);
-	sprintf((char*)check_data, "\"check_data\":[{\"iot_item_id\":\"5\",\"data\":\"%f\"},{\"iot_item_id\":\"6\",\"data\":\"%f\"}]", iot_item_1, iot_item_2);
-	sprintf((char*)json_packet, "{%s,%s,%s,%s}", mac_addr, request_serial_no, check_Time, check_data);
+	sprintf((char*)check_data, "\"check_data\":[{\"iot_item_id\":\"100\",\"data\":\"%d\"},{\"iot_item_id\":\"101\",\"data\":\"%f\"},", adcValue, iot_item_2);
+	sprintf((char*)check_data2, "{\"iot_item_id\":\"102\",\"data\":\"%d\"},{\"iot_item_id\":\"103\",\"data\":\"%f\"},{\"iot_item_id\":\"104\",\"data\":\"%d\"},{\"iot_item_id\":\"105\",\"data\":\"%f\"},{\"iot_item_id\":\"106\",\"data\":\"%d\"},{\"iot_item_id\":\"107\",\"data\":\"%f\"},{\"iot_item_id\":\"108\",\"data\":\"%d\"},{\"iot_item_id\":\"109\",\"data\":\"%d\"},{\"iot_item_id\":\"110\",\"data\":\"%d\"}]", adcValue, iot_item_2, adcValue, iot_item_2,adcValue, iot_item_2,adcValue, adcValue,adcValue);
+	sprintf((char*)json_packet, "{%s,%s,%s,%s,%s}", mac_addr, request_serial_no, check_Time, check_data, check_data2);
+	
+//	sprintf((char*)json_packet, "{%s,%s,%s,%s,%s,%s,%s,%s}", mac_addr, request_serial_no, check_Time, check_data, check_data2, check_data3,check_data4,check_data5);
+	
 	contentLength = strlen((char *)json_packet);
 	//sprintf((char*)post_header,  "POST HTTP/1.1\r\nHost: 192.168.25.36::25261\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: %d\r\n", contentLength);
 	sprintf((char*)post_packet, "%sEOF\r\n", json_packet);

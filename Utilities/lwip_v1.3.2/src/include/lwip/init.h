@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
  * All rights reserved. 
  * 
@@ -28,7 +28,7 @@
  * 
  * Author: Adam Dunkels <adam@sics.se>
  *
- */
+ **/
 #ifndef __LWIP_INIT_H__
 #define __LWIP_INIT_H__
 
@@ -41,9 +41,9 @@ extern "C" {
 /** X.x.x: Major version of the stack */
 #define LWIP_VERSION_MAJOR      1U
 /** x.X.x: Minor version of the stack */
-#define LWIP_VERSION_MINOR      4U
+#define LWIP_VERSION_MINOR      3U
 /** x.x.X: Revision of the stack */
-#define LWIP_VERSION_REVISION   1U
+#define LWIP_VERSION_REVISION   2U
 /** For release candidates, this is set to 1..254
   * For official releases, this is set to 255 (LWIP_RC_RELEASE)
   * For development versions (CVS), this is set to 0 (LWIP_RC_DEVELOPMENT) */
